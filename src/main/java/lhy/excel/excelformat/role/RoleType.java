@@ -34,52 +34,63 @@ public class RoleType {
     public static  final int DATE_TYPE = 1<<6;
 
 
-    public static  Integer getTbType(){ return TB_TYPE; }
+    public static  int getTbType(){ return TB_TYPE; }
 
-    public static Integer getStrType(){
+    public static int getStrType(){
         return STR_TYPE;
     }
 
 
-    public static  Integer getMapType(){
+    public static  int getMapType(){
         return MAP_TYPE;
     }
 
-    public static  Integer getIntType(){
+    public static  int getIntType(){
         return INT_TYPE;
     }
 
-    public static  Integer getFlType(){
+    public static  int getFlType(){
         return FLOAT_TYPE;
     }
 
-    public static  Integer getDateType(){
+    public static  int getDateType(){
         return DATE_TYPE;
     }
 
-    public static Integer getDateTypeNotNull(){
+    public static int getDateTypeNotNull(){
         return DATE_TYPE | NOT_NULL;
     }
 
-    public static Integer getStrTypeNotNull(){
+    public static int getStrTypeNotNull(){
         return STR_TYPE | NOT_NULL;
     }
 
-    public static  Integer getMapTypeNotNull(){
+    public static  int getMapTypeNotNull(){
         return MAP_TYPE | NOT_NULL;
     }
 
-    public static  Integer getNotNullTypeNotNull(){
+    public static  int getNotNullTypeNotNull(){
         return NOT_NULL | NOT_NULL;
     }
 
-    public static  Integer getIntTypeNotNull(){
+    public static  int getIntTypeNotNull(){
         return INT_TYPE | NOT_NULL;
     }
 
-    public static  Integer getFlTypeNotNull(){
+    public static  int getFlTypeNotNull(){
         return FLOAT_TYPE | NOT_NULL;
     }
 
+    public static int forTable(int roleType){
+        return roleType | TB_TYPE;
+    }
+
+    public static int forMap(int roleType){
+        return roleType | MAP_TYPE;
+    }
+
+    public static int forNotNull(int roleType){
+        return roleType | NOT_NULL;
+    }
 
 }
