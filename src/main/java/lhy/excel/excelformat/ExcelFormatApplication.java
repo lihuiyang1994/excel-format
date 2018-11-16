@@ -1,0 +1,12 @@
+package lhy.excel.excelformat;
+
+import org.springframework.boot.SpringApplication;
+import org.springframework.boot.autoconfigure.SpringBootApplication;
+
+@SpringBootApplication
+public class ExcelFormatApplication {
+
+	public static void main(String[] args) {
+		SpringApplication.run(ExcelFormatApplication.class, args);
+	}
+}
